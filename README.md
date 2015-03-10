@@ -8,6 +8,11 @@
 <br>
 <i>Download GitHub</i>
 <br>
-<small>Optional, but strongly recommended for version control.</small>
+Optional, but strongly recommended for version control.
+<br>
+<br>
+<i>Secure File Transfer Protocol (STFP)</i>
+<br>
+Since MFile is a hassle to get to, please download the corresponding program for your computer: http://www.itcs.umich.edu/help/faq/down-transfer.php
 
 

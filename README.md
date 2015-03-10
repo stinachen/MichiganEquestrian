@@ -5,6 +5,8 @@
 <br>
 <br>
 <b>Information for New Webmasters</b>
+<br>
 <i>Download GitHub</i>
+<br>
 Optional, but strongly recommended for version control.
 

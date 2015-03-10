@@ -8,5 +8,6 @@
 <br>
 <i>Download GitHub</i>
 <br>
-Optional, but strongly recommended for version control.
+<small>Optional, but strongly recommended for version control.</small>
+
 

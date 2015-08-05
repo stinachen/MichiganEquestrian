@@ -6,10 +6,6 @@
 <br>
 <b>Information for New Webmasters</b>
 <br>
-<i>Download GitHub</i>
-<br>
-Optional, but strongly recommended for version control.
-<br>
 <br>
 <i>Secure File Transfer Protocol (STFP)</i>
 <br>

@@ -1,3 +1,16 @@
+<!-- S I T E  I N F O R M A T I O N -->
+<!-- 
+	To edit a section, search by the keyword (id)
+	and follow instructions preceding the <div> or
+	<section>. 
+
+	// TO DO (for Christina): change id names.
+	S E C T I O N S: (name to search is in quotes)
+	header: "headerwrap"
+	officers: "team"
+	team: "portfolio"
+	contact: "contact"
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,6 +48,7 @@
   <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
   
   
+  	<!-- N A V I G A T I O N  B A R -->
   	<div id="navbar-main">
       <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -45,9 +59,9 @@
           <ul class="nav navbar-nav">
             <li><a href="#home" class="smoothScroll">Home</a></li>
 			<li> <a href="#about" class="smoothScroll"> About</a></li>
-			<li> <a href="#services" class="smoothScroll"> Riding</a></li>
-			<li> <a href="#team" class="smoothScroll"> Officers</a></li>
-			<li> <a href="#portfolio" class="smoothScroll"> Team</a></li>
+			<li> <a href="#showing" class="smoothScroll"> Riding</a></li>
+			<li> <a href="#officers" class="smoothScroll"> Officers</a></li>
+			<li> <a href="#team" class="smoothScroll"> Team</a></li>
 			<li> <a href="#faq" class="smoothScroll"> FAQ</a></li>
 			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
         </div><!--/.nav-collapse -->
@@ -56,16 +70,31 @@
     </div>
 
   
-		<!-- ==== HEADERWRAP ==== -->
+		<!-- H E A D E R -->
+		<!--
+			Images can be updated by changing the "src" attribute of the <img> tag.
+			The simplest way is to upload the new image into 'assets/img' on mfile 
+			with the same name: "umet-website-header-cropped.jpg".
+			The <img> tag of the header should always look like: 
+				<img src="assets/img/FILENAME"/>
+			where FILENAME is the name of the file (with the extension included).
+		-->
 	    <div id="headerwrap" id="home" name="home">
 			<header class="clearfix">
-	  		 		<h1><img src="assets/img/umet-website-header-cropped.png"/></h1>
+	  		 		<h1><img src="assets/img/umet-website-header-cropped.jpg"/></h1>
 	  		 		<p>We are a team of <strong>University of Michigan</strong> students with a passion for horses.</p>
 	  		</header>	    
 	    </div><!-- /headerwrap -->
 
 		
-		<!-- ==== ABOUT ==== -->
+		<!-- A B O U T -->
+		<!--
+			Content goes in between the third set of <div> tags.
+			Paragraphs are denoted by <p> tags, so each paragraph lives between
+			its own set of <p> tags.
+			Please note: some special characters will not display correctly such
+			as &, which needs to be written like &amp;
+		-->
 		<div class="container" id="about" name="about">
 			<div class="row white">
 			<br>
@@ -78,20 +107,28 @@
 			</div><!-- row -->
 		</div><!-- container -->
 		
-		<!-- ==== SECTION DIVIDER1 -->
+		<!-- S O C I A L  M E D I A -->
+		<!--
+			The format of a link is: <a href="URL"></a>. The href attribute is 
+			where the links go. If any links to social media need to be changed,
+			put the changes in between the quotes of the href attribute.
+		-->
 		<section class="section-divider textdivider divider1">
 			<div class="container">
 				<!-- social media stuff here probably -->
 				<h1>FIND US ON SOCIAL MEDIA</h1>
 				<hr>
 				<p>
+					<!-- facebook -->
 					<a href="https://www.facebook.com/michiganequestrian">
 						<img src="assets/img/icons/facebook.png"/>
 					</a>
-					<a href="https://instagram.com/michiganequestrian/">
+					<!-- instagram -->
+					<a href="https://instagram.com/UMichEquestrian/">
 						<img src="assets/img/icons/instagram.png"/>
 					</a>
-					<a href="https://twitter.com/um_equestrian">
+					<!-- twitter -->
+					<a href="https://twitter.com/UMichEquestrian">
 						<img src="assets/img/icons/twitter.png"/>
 					</a>
 				</p>
@@ -99,8 +136,17 @@
 		</section><!-- section -->
 		
 		
-		<!-- ==== SERVICES ==== -->
-		<div class="container" id="services" name="services">
+		<!-- S H O W I N G -->
+		<!--
+			The showing section is divided into three columns. Each paragraph 
+			goes between the <p> tags.
+			(If additional paragraphs need to be added, a new <div> section will
+			be needed per paragraph. The class attribute on each of the paragraph 
+			<div>'s will need to be updated or else the columns won't fit on the 
+			site. Please see Bootstrap's documentation for more information: 
+			http://getbootstrap.com/css/#grid)
+		-->
+		<div class="container" id="showing" name="showing">
 			<br>
 			<br>
 			<div class="row">
@@ -128,7 +174,7 @@
 		</div><!-- container -->
   		
 
-		<!-- ==== SECTION DIVIDER2 -->
+		<!-- P R A C T I C E -->
 		<section class="section-divider textdivider divider2">
 			<div class="container">
 				<h1 class="centered">PRACTICE</h1>
@@ -139,32 +185,52 @@
 			</div><!-- container -->
 		</section><!-- section -->
 
-		<!-- ==== TEAM MEMBERS ==== -->
-		<div class="container" id="team" name="team">
+		<!-- O F F I C E R S -->
+		<!--
+			Please put all images in the assets/img/officers folder.
+			For convenience and organization, name all files in the format:
+			[FIRST-INITIAL][LAST-NAME][JPG].
+
+			Each officer will have its own <div> section. Copy and paste an 
+			existing <div> section and modify as necessary.
+			Modifications needed to be made:
+			- image: change the src attribute of the <img> tag.
+			- name: inside the <h4><b></b></h4> tags
+			- position: under the name, in the <p> tag
+		-->
+		<div class="container" id="officers" name="officers">
 		<br>
 			<div class="row white centered">
 				<h1 class="centered">MEET OUR OFFICERS</h1>
 				<hr>
 				<br>
 				<br>
-				<div class="col-lg-3 centered">
-					<img class="img img-rounded" src="assets/img/officers/awerkema.jpg" height="150px" width="150px" alt="">
-					<br>
-					<h4><b>Ashley Werkema</b></h4>
-					<p>President</p>
-				</div><!-- col-lg-3 -->
 				
 				<div class="col-lg-3 centered">
 					<img class="img img-rounded" src="assets/img/officers/dhowes.jpg" height="150px" width="150px" alt="">
 					<br>
 					<h4><b>David Howes</b></h4>
-					<p>Vice-President</p>
+					<p>Co-President</p>
 				</div><!-- col-lg-3 -->
 				
 				<div class="col-lg-3 centered">
 					<img class="img img-rounded" src="assets/img/officers/mkernohan.jpg" height="150px" width="150px" alt="">
 					<br>
 					<h4><b>Morgan Kernohan</b></h4>
+					<p>Co-President</p>
+				</div><!-- col-lg-3 -->
+
+				<div class="col-lg-3 centered">
+					<img class="img img-rounded" src="assets/img/officers/amukavitz.jpg" height="150px" width="150px" alt="">
+					<br>
+					<h4><b>Allie Mukavitz</b></h4>
+					<p>Vice-President</p>
+				</div><!-- col-lg-3 -->
+
+				<div class="col-lg-3 centered">
+					<img class="img img-rounded" src="assets/img/officers/jsmith.jpg" height="150px" width="150px" alt="">
+					<br>
+					<h4><b>Jane Smith</b></h4>
 					<p>Vice-President</p>
 				</div><!-- col-lg-3 -->
 				
@@ -176,47 +242,24 @@
 				</div><!-- col-lg-3 -->
 
 				<div class="col-lg-3 centered">
-					<img class="img img-rounded" src="assets/img/officers/lschoof.jpg" height="150px" width="150px" alt="">
-					<br>
-					<h4><b>Lauren Schoof</b></h4>
-					<p>Points &amp; Sponsorships</p>
-				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
-					<img class="img img-rounded" src="assets/img/officers/cchen.jpg" height="150px" width="150px" alt="">
-					<br>
-					<h4><b>Christina Chen</b></h4>
-					<p>Fundraising &amp; Webmaster</p>
-				</div><!-- col-lg-3 -->
-
-				<div class="col-lg-3 centered">
 					<img class="img img-rounded" src="assets/img/officers/kmyers.jpg" height="150px" width="150px" alt="">
 					<br>
 					<h4><b>Katie Myers</b></h4>
-					<p>New Member</p>
+					<p>Webmaster</p>
 				</div><!-- col-lg-3 -->
 
 				<div class="col-lg-3 centered">
-					<img class="img img-rounded" src="assets/img/officers/amukavitz.jpg" height="150px" width="150px" alt="">
+					<img class="img img-rounded" src="assets/img/officers/mvarady.jpg" height="150px" width="150px" alt="">
 					<br>
-					<h4><b>Allie Mukavitz</b></h4>
-					<p>Social</p>
+					<h4><b>Mara Varady</b></h4>
+					<p>New Member Coordinator</p>
 				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
-					<!--<img class="img img-rounded" src="assets/img/officers/ewilson.jpg" height="150px" width="150px" alt="">-->
-					<br>
-					<h4><b>Emily Wilson</b></h4>
-					<p>Apparel</p>
-				</div><!-- col-lg-3 -->
-
-				
 			</div><!-- row -->
 		</div><!-- container -->
 
 		
 		
-		<!-- ==== SECTION DIVIDER3 -->
+		<!-- J O I N  T H E  T E A M -->
 		<section class="section-divider textdivider divider3">
 			<div class="container">
 				<h1>JOIN THE TEAM</h1>
@@ -225,8 +268,39 @@
 			</div><!-- container -->
 		</section><!-- section -->
 		
-		<!-- ==== PORTFOLIO ==== -->
-		<div class="container" id="portfolio" name="portfolio">
+		<!-- T E A M -->
+		<!-- 
+			All images should go in /assets/img/team and named identically to the 
+			officers. (First initial followed by last name).
+
+			Each row contains a maximum of three members. This section is more 
+			involved than the officers section. The members are to be sorted alphabetically 
+			by last name.
+	
+			The structure of each row is:
+				<div class="row"> // THE FIRST ROW
+					<div class="col-md-4">
+						COLUMN 1 MEMBER
+					</div>
+					<div class="col-md-4">
+						COLUMN 2 MEMBER
+					</div>
+					<div class="col-md-4">
+						COLUMN 3 MEMBER
+					</div>
+				</div>
+				<div class="row"> // THE SECOND ROW
+				...
+				</div>
+
+			So if a section exceeds three <div class="col-md-4">'s, the next <div> needs
+			to be moved to the subsequent <div class="row">.
+
+			Again, the src attribute of the <img> tag contains the link to the image.
+			Within the <figcaption> tags and inside the <h5> tags, put the member's 
+			information: NAME | YEAR | DIVISION.
+		-->
+		<div class="container" id="team" name="team">
 		<br>
 			<div class="row">
 				<br>
@@ -251,15 +325,49 @@
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/team/cchen.jpg" alt="">
+							<img class="img-responsive" src="assets/img/team/kanderson.jpg" alt="">
 							<figcaption>
-								<h5>Christina Chen | 2015 | Novice</h5>
-								<!--<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Novice</a>-->
+								<h5>Katrina Anderson | 2017 | AWTC</h5>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
-				
+
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/acacciaglia.jpg" alt="">
+							<figcaption>
+								<h5>Abrielle Cacciaglia | 2018 | Novice</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->	
+
+			</div><!-- /row -->
+			<div class="row">
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/cchen.jpg" alt="">
+							<figcaption>
+								<h5>Christina Chen | 2015 | Novice</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->		
+
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/cchristian.jpg" alt="">
+							<figcaption>
+								<h5>Cassie Christian | 2018 | BWTC</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -269,10 +377,47 @@
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->				
-
+				</div><!-- /col -->	
 			</div><!-- /row -->
 			<div class="row">
+
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/kdegrace.jpg" alt="">
+							<figcaption>
+								<h5>Katie Degrace | 2018 | WT</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/sfranklin.jpg" alt="">
+							<figcaption>
+								<h5>Sarah Franklin | 2016 | WT</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/jfrench.jpg" alt="">
+							<figcaption>
+								<h5>Jessica French | 2016 | AWTC</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+
+			</div><!-- /row -->
+
+			<div class="row">
+
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -307,8 +452,8 @@
 				</div><!-- /col -->	
 
 			</div><!-- /row -->
-
 			<div class="row">
+
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -330,6 +475,7 @@
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->	
+
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -340,8 +486,10 @@
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
+
 			</div><!-- /row -->
 			<div class="row">
+
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -363,6 +511,32 @@
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
+
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/hprout.jpg" alt="">
+							<figcaption>
+								<h5>Haley Prout | 2018 | BWTC</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+		
+			</div><!-- /row -->
+			<div class="row">
+
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/arosenstock.jpg" alt="">
+							<figcaption>
+								<h5>Allison Rosenstock | 2016 | Novice</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -373,9 +547,7 @@
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
-				
-			</div><!-- /row -->
-			<div class="row">
+
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -387,6 +559,9 @@
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->	
 
+			</div><!-- /row -->
+			<div class="row">
+
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -396,7 +571,8 @@
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
+				</div><!-- /col -->	
+
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -407,7 +583,18 @@
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
-			
+
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/mtaetle.jpg" alt="">
+							<figcaption>
+								<h5>Melanie Taetle | 2018 | Open</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->	
+
 			</div><!-- /row -->
 			<div class="row">
 				<div class="col-md-4">
@@ -420,7 +607,6 @@
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->	
-				
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
@@ -431,13 +617,25 @@
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
+
+				<div class="col-md-4">
+				<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/team/ewilson.jpg" alt="">
+							<figcaption>
+								<h5>Emily Wilson | 2015 | AWTC</h5>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
 			</div><!-- /row -->
 			<br>
 			<br>
+			
 		</div><!-- /row -->
 	</div><!-- /container -->
 
-		<!-- ==== SECTION DIVIDER4 ==== -->
+		<!-- empty section ==== -->
 		<section class="section-divider textdivider divider4">
 			<div class="container">
 				<h1></h1>
@@ -445,7 +643,16 @@
 			</div><!-- container -->
 		</section><!-- section -->
 		
-		<!-- ==== FAQ ==== -->
+		<!-- F A Q -->
+		<!--
+			Q&A's are divided up and put into three columns.
+			Use your discretion in terms of which questions go into what columns.
+			There isn't a set ordering for the questions other than to fit
+			the questions and answers in the most aesthetic way possible (such that 
+			the columns are of equal length).
+
+			Questions go in <h4> tags. Answers go in <p> tags. 
+		-->
 		<div class="container" id="faq" name="faq">
 		<br>
 			<div class="row">
@@ -461,7 +668,7 @@
 				</div><!-- col-lg-4 -->
 				<div class="col-lg-4">
 					<h4>Where do you ride?</h4>
-					<p>Our team is pased at Willowbrooke Farm in Plymouth Michigan, which is owned and operated by our coach, Jennifer Blades.</p>
+					<p>Our team is based at Willowbrooke Farm in Plymouth Michigan, which is owned and operated by our coach, Jennifer Blades.</p>
 					<h4>Are there tryouts?</h4>
 					<p>We do hold evaluation riders to give our coach, Jen, a chance to see you ride and ensure you are placed in the correct division. We do not cut anyone from the team.</p>
 				</div>
@@ -484,6 +691,23 @@
 			</div><!-- container -->
 		</section><!-- section -->
 		
+		<!-- C O N T A C T  U S -->
+		<!--
+			Change new member information as necessary.
+			General questions are directed to the president/co-presidents.
+			If there is only one president and there were two previously, 
+			remove the last two <span> classes under "<h3>General Questions</h3>". 
+
+			If there are two presidents and only one president previously, make sure 
+			that there are two sets of <span> lines.
+			A set of <span>'s for a contact should look like:
+
+			<span class="glyphicon glyphicon-user"></span> NAME<br/>
+			<span class="glyphicon glyphicon-envelope"></span> EMAIL<br/>
+
+			Make sure there is a space before the namd and before the e-mail for
+			formatting with the glyphicon.
+		-->
 		<div class="container" id="contact" name="contact">
 			<div class="row">
 			<br>
@@ -494,18 +718,25 @@
 				<div class="col-lg-4">
 					<h3>Contact Information</h3>
 					<p><b>New Member Inquiries</b> <br/>
-						<span class="glyphicon glyphicon-user"></span> Katie Myers<br/>
-						<span class="glyphicon glyphicon-envelope"></span> katmyers@umich.edu<br/>
+						<span class="glyphicon glyphicon-user"></span> Mara Varady<br/>
+						<span class="glyphicon glyphicon-envelope"></span> mjvarady@umich.edu<br/>
 					</p>
 					<p><b>General Questions</b><br/>
-						<span class="glyphicon glyphicon-user"></span> Ashley Werkema<br />
-						<span class="glyphicon glyphicon-envelope"></span> awerkema@umich.edu<br/>
+						<span class="glyphicon glyphicon-user"></span> Morgan Kernohan<br />
+						<span class="glyphicon glyphicon-envelope"></span> mleek@umich.edu<br/>
+						<span class="glyphicon glyphicon-user"></span> David Howes<br />
+						<span class="glyphicon glyphicon-envelope"></span> dthowes@umich.edu<br/>
+						
 					</p>
 				</div><!-- col -->
 				
 				<div class="col-lg-4">
 					<h3>Willowbrooke Farm</h3>
 					<p><b>Coach: Jennifer Blades</b>
+						<br>
+						<b>Assistant Coaches:</b> 
+						<br>
+						<b>Jenny Steinmetz &amp; Kirsten Kumpar</b>
 						<br>
 						Please visit the website <a href="http://www.willowbrooke-farm.com">here</a> for more information about the barn and for lesson inquiries.
 						</p>
